@@ -1,0 +1,23 @@
+.cabecera{
+  display:flex;
+  background-color: black;
+}
+.cabecera img{
+  width: 99px;
+  height: 99px;
+  border-radius: 50%;
+
+}
+.indice{
+  width: auto;
+  color: #D0CECC;
+  font-size: 17px;
+}
+.indice li{
+  display: inline;
+}
+
+footer{
+  background-color: #433A33;
+  color: #D0CECC;
+}

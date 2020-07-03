@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}Base{% endblock title %}</title>
+    {% block extracss %}{% endblock extracss %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+  </head>
+  <body>
+
+    <div class="cabecera">
+      <img src='{% static "img/logo.jpeg" %}' alt="traductora publica">
+      <nav class="indice">
+        <ul>
+          <li><a href="{% url 'index' %}"></a>Inicio</li>
+          <li><a href="#">Acerca de mi</li>
+          <li><a href="{% url 'tramites' %}">Tramites</li>
+          <li><a href="#">Contacto</li>
+        </ul>
+      </nav>
+    </div>
+
+    {% block body %}
+    {% endblock body %}
+
+
+    <footer>
+      <h3>Enlaces de interes</h3>
+      <nav>
+        <ul>
+            <li><a href="https://www.colegiotraductores.org.uy/">Colegio de traductores</a></li>
+            <li><a href="https://ambmontevideo.esteri.it/ambasciata_montevideo/es/">Consulado Italiano en Montevideo</a></li>
+            <li><a href="#">Asociaciones Italianas</a></li>
+            <li><a href="#">Enseñanza idioma italiano</a></li>
+            <li><a href="https://ambmontevideo.esteri.it/ambasciata_montevideo/es/informazioni_e_servizi/patronati.html">Patronatos Italianos</a></li>
+            <li><a href="https://www.gub.uy/ministerio-relaciones-exteriores/">Ministerio de Relaciones Exteriores</a></li>
+            <li><a href="http://udelar.edu.uy/portal/">Universidad de la República</a></li>
+        </ul>
+      </nav>
+    </footer>
+
+
+
+
+    {% block extrajs %}{% endblock extrajs %}
+  </body>
+</html>
