@@ -13,10 +13,10 @@
       <img src='{% static "img/logo.jpeg" %}' alt="traductora publica">
       <nav class="indice">
         <ul>
-          <li><a href="{% url 'index' %}"></a>Inicio</li>
-          <li><a href="#">Acerca de mi</li>
-          <li><a href="{% url 'tramites' %}">Tramites</li>
-          <li><a href="#">Contacto</li>
+          <li><a href="{% url 'main:index' %}">Inicio</a></li>
+          <li><a href="#">Acerca de mi</a></li>
+          <li><a href="{% url 'main:tramites' %}">Tramites</a></li>
+          <li><a href="{% url 'main:contacto' %}">Contacto</a></li>
         </ul>
       </nav>
     </div>
